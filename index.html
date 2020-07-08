@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Några saker som kan vara bra innan du börjar
+      är att veta två saker med det här dokumentet. 
+      
+      Du kommer att märka att vi använder en klass som heter container på alla sektioner 
+      på den här sidan. Den styr själva grundstrukturen, dvs hur 
+      bred varje sektion är, hur texten ska vara formaterad och sånt som är samma på alla 
+      sektioner. 
+      
+      En annan nyhet är att vi använder en bakgrundsbild till toppen på sidan, det är ett 
+      vanligt sätt när man vill ha text ovanpå en bild. Det som är lite annorlunda att denna 
+      läggs in i CSS dokumentet och inte i html filen, precis som om du hade gjort en bakgrundsfärg 
+      – så kika efter background-image så hittar du den där. 
+
+      Lycka till! -->
+
+
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <!--En font som vi denna gång hämtar från google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/d82255b79b.js" crossorigin="anonymous"></script>
+      <title>My company webpage</title>
+</head>
+
+<body>
+
+      <!-- Här finns all html kod som har med toppen på sidan att göra, 
+            - kom ihåg att du hittar bilden i css dokumentet -->
+
+      <header>
+            <div class="container">
+                  <h1>Let us handle your Bookkeeping </h1>
+                  <h3> With our remote and in place bookkeeping services, you can save money
+                        without having to compromise expertis
+                        .</h3>
+                  <a href="#">Sign up now</a>
+            </div>
+      </header>
+
+      <!-- Här finns all html kod som har med dom tre iconerna att göra -->
+
+      <section class="what-we-do">
+            <div class="container">
+
+                  <h2>Accounting</h2>
+
+
+                  <p>
+                        Kazoa accounting firm offers ongoing accounting, financial statements, income declarations,
+                        payroll services,
+                        consolidated accounts, analyzes and much more. Through cutting edge expertise and a touch of
+                        magic, we tailor a unique
+                        solution for you and your company. we know that every individual and company has different needs
+                        and we offer expertise in all
+                        areas.
+                  </p>
+
+
+            </div>
+      </section>
+
+      <!-- Här finns all html kod som har med om oss sektionen att göra -->
+
+      <section class="about-us">
+            <div class="container">
+                  <h2>What we offer:</h2>
+                  <div class="icons">
+                        <div class="icon">
+                              <i class="fas fa-pen fa-3x"></i>
+                              <h3>Accounting</h3>
+                              <p>Keeping your Balance has perfected a complete solution for businesses</p>
+                        </div>
+
+                        <div class="icon">
+                              <i class="fas fa-calculator fa-3x"></i>
+                              <h3>Bookkeeping</h3>
+                              <p>We turn financial data int digistable information to help you make better decisins
+                                    about your busisness</p>
+                        </div>
+
+                        <div class="icon">
+                              <i class="fas fa-money-bill-wave fa-3x"></i>
+                              <h3>Payroll</h3>
+                              <p>With tax breaks and annual limits endless forms, payroll can be a pain. Leave it to us
+                                    so you can focus on the fun stuff</p>
+                        </div>
+                  </div>
+                  <a href="#">Read more</a>
+            </div>
+      </section>
+
+      <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+
+      <footer>
+            <div class="container">
+            </div>
+      </footer>
+
+</body>
+
+</html>

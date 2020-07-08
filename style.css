@@ -1,0 +1,97 @@
+/* 
+I det här dokumentet hittar du all styling för det här projektet, 
+Det är en hel del css som du inte har lärt dig ännu. Bland annat använder vi något 
+som heter flexbox eller display: flex för att skapa själva layouten, det behöver 
+du inte bry dig om idag – det tar vi i morgon. 
+*/
+
+/* Här är styling som gäller för hela sidan */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Container klassen är en klass som vi återanvänder mycket i vår html, 
+den gör att varje sektion blir 80% av sidan och att det blir samma padding över 
+hela sidan. Den styr med andra ord väldigt mycket av grund layouten. 
+Den behöver du inte ändra i så mycket om du inte vill ändra den övergripande strukturen */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* Här är styling som gäller för rubriker och text */
+
+h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+/* Här är styling som gäller för toppen på sidan */
+
+header {
+    /* En ny grej är att vi nu lägger in bilden i CSS som en bakgrund, här redigerar du den. */
+    background-image: url("./images/accounting.jpg");
+    background-repeat: no-repeat; /* Styr bilden */
+    background-size: cover; /* Styr bilden */
+    padding: 60px 0;
+    
+
+}
+/* Styling för knappen */
+
+header a {
+    color: white;
+    border: white solid;
+    border-radius: 40px; /* Gör att knappen får runda hörn */
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Styling för iconerna */
+
+.icons {
+    display: flex; /* Gör att dom lägger sig brevid varandra – men mer om detta i morgon. */
+    justify-content: center;
+    align-items: top;
+}
+
+a:hover{
+     background-color: rgb(0, 255, 200);
+}
+/* Styling för about-us sektionen */
+
+.about-us {
+    background-color: rgb(217, 239, 247);
+}
+
+/* Styling för footern på sidan */
+
+footer {
+    background-color: #151515;
+    color: white;
+}
